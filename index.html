@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMPIRE | Business Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h1>♛ EMPIRE</h1>
+  <p class="sub">BUSINESS WORLD</p>
+
+  <button onclick="showPage('home')">◈ Dashboard</button>
+  <button onclick="showPage('market')">▦ Market</button>
+  <button onclick="showPage('business')">⌂ My Businesses</button>
+  <button onclick="showPage('research')">✧ Research Lab</button>
+  <button onclick="showPage('achievements')">♜ Achievements</button>
+
+  <div class="side-bottom">SIMULATION LIVE<br><span>WORLD 01</span></div>
+</div>
+
+<main>
+<header>
+  <div>
+    <small>WELCOME BACK, FOUNDER</small>
+    <h2 id="pageTitle">Command Center</h2>
+  </div>
+  <div class="rank">◆ STARTUP FOUNDER</div>
+</header>
+
+<div class="stats">
+  <div class="stat"><small>TOTAL CASH</small><h2 id="cash">₹ 1500</h2></div>
+  <div class="stat"><small>HOURLY INCOME</small><h2 id="income">₹ 0</h2></div>
+  <div class="stat"><small>EMPIRE VALUE</small><h2 id="value">₹ 1500</h2></div>
+  <div class="stat"><small>REPUTATION</small><h2 id="xp">0 XP</h2></div>
+</div>
+
+<section id="home" class="page active">
+  <div class="hero">
+    <div>
+      <span class="tag">THE FUTURE IS YOURS</span>
+      <h1>Build Your<br><em>Business Empire.</em></h1>
+      <p>Start with an idea. Finish with an empire.</p>
+      <button class="main-btn" onclick="showPage('market')">EXPLORE MARKET ↗</button>
+    </div>
+    <div class="globe">∞</div>
+  </div>
+
+  <div class="columns">
+    <div class="panel">
+      <h3>YOUR PORTFOLIO</h3>
+      <div id="homeBusinesses">No businesses yet. Start your journey!</div>
+    </div>
+    <div class="panel">
+      <h3>FOUNDER'S BRIEFING</h3>
+      <div class="brief-icon">✦</div>
+      <h3>Opportunity Awaits</h3>
+      <p>Launch your first business and start generating virtual revenue.</p>
+      <button onclick="showPage('market')">TAKE ACTION →</button>
+    </div>
+  </div>
+</section>
+
+<section id="market" class="page">
+  <h1>Market District</h1>
+  <p class="muted">Choose your next business venture.</p>
+  <div class="cards" id="marketCards"></div>
+</section>
+
+<section id="business" class="page">
+  <h1>My Businesses</h1>
+  <p class="muted">Manage and upgrade your companies.</p>
+  <div class="cards" id="ownedCards"></div>
+</section>
+
+<section id="research" class="page">
+  <h1>Research & Development</ah1>
+  <p class="muted">Unlock powerful empire-wide upgrades.</p>
+  <div class="cards" id="researchCards"></div>
+</section>
+
+<section id="achievements" class="page">
+  <h1>Achievements</h1>
+  <p class="muted">Your journey to becoming a business legend.</p>
+  <div class="cards" id="achievementCards"></div>
+</section>
+
+<footer>EMPIRE SIMULATOR · BUILD YOUR LEGACY · VIRTUAL CURRENCY ONLY</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
